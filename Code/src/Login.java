@@ -1,10 +1,8 @@
-package first_package;
-
-public class login {
+public class Login {
     private String username_admin,password_admin,
 
                    username_user,password_user;
-    public login(){
+    public Login(){
         username_admin = "sugma";
         password_admin = "haimanis";
 
@@ -38,4 +36,3 @@ public class login {
     public String getPassword_user() {
         return password_user;}
 }
-

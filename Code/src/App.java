@@ -1,20 +1,16 @@
-package first_package;
-
-
 import java.util.Scanner;
 
-public class main {
-
-    public static void main (String [] args) {
+public class App {
+    public static void main(String [] args) {
         String user, password;
         int check = 2;
 
-        login login  = new login();
+        Login login  = new Login();
         do {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("----------login----------");
-            System.out.print("|| Masukkan username : ||");user = scanner.nextLine();
-            System.out.print("|| Masukkan password : ||");password = scanner.nextLine();
+            System.out.println("----------LOGIN----------");
+            System.out.print("|| Masukkan username : ");user = scanner.nextLine();
+            System.out.print("|| Masukkan password : ");password = scanner.nextLine();
             System.out.println("-------------------------");
 
             if (user.equals(login.getUsername_admin()) && password.equals(login.getPassword_admin()) ||
@@ -23,7 +19,7 @@ public class main {
                 if (user.equals(login.getUsername_admin())){
                     System.out.println("Selamat Datang Admin");
                 } else if (user.equals(login.getUsername_user())) {
-                    System.out.println("Selamat datang user");
+                    System.out.println("Selamat Datang User");
                 }
             }else{
                 System.out.println("Password atau Username anda salah");
