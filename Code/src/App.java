@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class App {
     public static void main(String [] args) {
         String user, password;
-        int check = 2;
+        int menu, menu_admin;
 
         Login login  = new Login();
         do {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("----------LOGIN----------");
+            System.out.println("~~~~~~~~~~LOGIN~~~~~~~~~~");
             System.out.print("|| Masukkan username : ");user = scanner.nextLine();
             System.out.print("|| Masukkan password : ");password = scanner.nextLine();
-            System.out.println("-------------------------");
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 
             if (user.equals(login.getUsername_admin()) && password.equals(login.getPassword_admin()) ||
                 user.equals(login.getUsername_user()) && password.equals(login.getPassword_user())){
