@@ -23,6 +23,7 @@ public class Menu {
     public void setHarga(int harga) {
         this.harga = harga;
     }
-
+    public String toString() {
+        return "Nama Menu : " + nama + " || Rp." + harga;
     }
 }

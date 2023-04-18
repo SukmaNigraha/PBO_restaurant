@@ -46,4 +46,10 @@ public class Restaurant {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
+    @Override
+    public String toString() {
+        return "ID Restaurant : " + id +
+                " || nama = " + nama + ' ' +
+                " || alamat = " + alamat + ' ';
+    }
 }

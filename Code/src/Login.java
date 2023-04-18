@@ -3,10 +3,10 @@ public class Login {
 
                    username_user,password_user;
     public Login(){
-        username_admin = "sugma";
+        username_admin = "admin";
         password_admin = "haimanis";
 
-        username_user = "sigma";
+        username_user = "user";
         password_user = "haimanis";
     }
     //setter
