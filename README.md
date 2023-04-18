@@ -6,6 +6,11 @@
 
 Program ini merupakan tugas kuliah Pemrograman berbasis objek yang berupa sebuah program restoran sederhana dengan fitur pembelian makanan secara online menggunakan command line.
 
+## UML
+UML (Unified Modelling Language) adalah suatu metode dalam pemodelan secara visual yang digunakan sebagai sarana perancangan sistem berorientasi objek. Dibawah ini adalah UML dari Program ini 
+
+![UML](/img/UML_restaurant.drawio.png "UML")
+
 ## Alur Program
 
 Berikut adalah alur dari program ini
