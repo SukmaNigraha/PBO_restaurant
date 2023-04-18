@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.HashMap;
 
 public class Admin {
-    private static ArrayList<Restaurant> restaurants = new ArrayList<>();
-    public static ArrayList<Menu> menus = new ArrayList<>();
+    static HashMap<String, Restaurant> restaurants = new HashMap<>()
     private static Scanner scanner = new Scanner(System.in);
     static void MenuAdmin() {
         System.out.println("~~~~~~~~~~ADMIN~~~~~~~~~~");
@@ -16,18 +16,16 @@ public class Admin {
 
     // tambah restaurant
     public static void addRestaurant() {
-        System.out.print("Masukkan ID restaurant");
+        System.out.print("Masukkan ID restaurant : ");
         int id = scanner.nextLine();
 
         System.out.print("Masukkan nama restaurant: ");
         String name = scanner.next();
 
-        System.out.print("Masukkan alamat restaurant :");
+        System.out.print("Masukkan alamat restaurant : ");
         String alamat = scanner.next();
 
         Restaurant restaurant = new Restaurant(id, name, alamat);
-        restaurants.add(restaurant);
-        System.out.println(name + " Telah di tambahkan dilist restaurants.");
 
         int ulang;
         do {
